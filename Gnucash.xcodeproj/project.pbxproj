@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4209EE0A196A95FD005BFA87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4209EE09196A95FD005BFA87 /* Foundation.framework */; };
+		4209EE0C196A95FD005BFA87 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4209EE0B196A95FD005BFA87 /* CoreGraphics.framework */; };
+		4209EE0E196A95FD005BFA87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4209EE0D196A95FD005BFA87 /* UIKit.framework */; };
+		4209EE14196A95FD005BFA87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4209EE12196A95FD005BFA87 /* InfoPlist.strings */; };
+		4209EE16196A95FD005BFA87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4209EE15196A95FD005BFA87 /* main.m */; };
+		4209EE1A196A95FD005BFA87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4209EE19196A95FD005BFA87 /* AppDelegate.m */; };
+		4209EE1D196A95FD005BFA87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4209EE1B196A95FD005BFA87 /* Main.storyboard */; };
+		4209EE20196A95FD005BFA87 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4209EE1F196A95FD005BFA87 /* FirstViewController.m */; };
+		4209EE23196A95FD005BFA87 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4209EE22196A95FD005BFA87 /* SecondViewController.m */; };
+		4209EE25196A95FD005BFA87 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4209EE24196A95FD005BFA87 /* Images.xcassets */; };
+		4209EE2C196A95FD005BFA87 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4209EE2B196A95FD005BFA87 /* XCTest.framework */; };
+		4209EE2D196A95FD005BFA87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4209EE09196A95FD005BFA87 /* Foundation.framework */; };
+		4209EE2E196A95FD005BFA87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4209EE0D196A95FD005BFA87 /* UIKit.framework */; };
+		4209EE36196A95FD005BFA87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4209EE34196A95FD005BFA87 /* InfoPlist.strings */; };
+		4209EE38196A95FD005BFA87 /* GnucashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4209EE37196A95FD005BFA87 /* GnucashTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4209EE2F196A95FD005BFA87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4209EDFE196A95FD005BFA87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4209EE05196A95FD005BFA87;
+			remoteInfo = Gnucash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4209EE06196A95FD005BFA87 /* Gnucash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gnucash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4209EE09196A95FD005BFA87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4209EE0B196A95FD005BFA87 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4209EE0D196A95FD005BFA87 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4209EE11196A95FD005BFA87 /* Gnucash-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Gnucash-Info.plist"; sourceTree = "<group>"; };
+		4209EE13196A95FD005BFA87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4209EE15196A95FD005BFA87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4209EE17196A95FD005BFA87 /* Gnucash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gnucash-Prefix.pch"; sourceTree = "<group>"; };
+		4209EE18196A95FD005BFA87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4209EE19196A95FD005BFA87 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4209EE1C196A95FD005BFA87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4209EE1E196A95FD005BFA87 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		4209EE1F196A95FD005BFA87 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		4209EE21196A95FD005BFA87 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		4209EE22196A95FD005BFA87 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		4209EE24196A95FD005BFA87 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4209EE2A196A95FD005BFA87 /* GnucashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GnucashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4209EE2B196A95FD005BFA87 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4209EE33196A95FD005BFA87 /* GnucashTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GnucashTests-Info.plist"; sourceTree = "<group>"; };
+		4209EE35196A95FD005BFA87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4209EE37196A95FD005BFA87 /* GnucashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GnucashTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4209EE03196A95FD005BFA87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4209EE0C196A95FD005BFA87 /* CoreGraphics.framework in Frameworks */,
+				4209EE0E196A95FD005BFA87 /* UIKit.framework in Frameworks */,
+				4209EE0A196A95FD005BFA87 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4209EE27196A95FD005BFA87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4209EE2C196A95FD005BFA87 /* XCTest.framework in Frameworks */,
+				4209EE2E196A95FD005BFA87 /* UIKit.framework in Frameworks */,
+				4209EE2D196A95FD005BFA87 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4209EDFD196A95FD005BFA87 = {
+			isa = PBXGroup;
+			children = (
+				4209EE0F196A95FD005BFA87 /* Gnucash */,
+				4209EE31196A95FD005BFA87 /* GnucashTests */,
+				4209EE08196A95FD005BFA87 /* Frameworks */,
+				4209EE07196A95FD005BFA87 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4209EE07196A95FD005BFA87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4209EE06196A95FD005BFA87 /* Gnucash.app */,
+				4209EE2A196A95FD005BFA87 /* GnucashTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4209EE08196A95FD005BFA87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4209EE09196A95FD005BFA87 /* Foundation.framework */,
+				4209EE0B196A95FD005BFA87 /* CoreGraphics.framework */,
+				4209EE0D196A95FD005BFA87 /* UIKit.framework */,
+				4209EE2B196A95FD005BFA87 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4209EE0F196A95FD005BFA87 /* Gnucash */ = {
+			isa = PBXGroup;
+			children = (
+				4209EE18196A95FD005BFA87 /* AppDelegate.h */,
+				4209EE19196A95FD005BFA87 /* AppDelegate.m */,
+				4209EE1B196A95FD005BFA87 /* Main.storyboard */,
+				4209EE1E196A95FD005BFA87 /* FirstViewController.h */,
+				4209EE1F196A95FD005BFA87 /* FirstViewController.m */,
+				4209EE21196A95FD005BFA87 /* SecondViewController.h */,
+				4209EE22196A95FD005BFA87 /* SecondViewController.m */,
+				4209EE24196A95FD005BFA87 /* Images.xcassets */,
+				4209EE10196A95FD005BFA87 /* Supporting Files */,
+			);
+			path = Gnucash;
+			sourceTree = "<group>";
+		};
+		4209EE10196A95FD005BFA87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4209EE11196A95FD005BFA87 /* Gnucash-Info.plist */,
+				4209EE12196A95FD005BFA87 /* InfoPlist.strings */,
+				4209EE15196A95FD005BFA87 /* main.m */,
+				4209EE17196A95FD005BFA87 /* Gnucash-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4209EE31196A95FD005BFA87 /* GnucashTests */ = {
+			isa = PBXGroup;
+			children = (
+				4209EE37196A95FD005BFA87 /* GnucashTests.m */,
+				4209EE32196A95FD005BFA87 /* Supporting Files */,
+			);
+			path = GnucashTests;
+			sourceTree = "<group>";
+		};
+		4209EE32196A95FD005BFA87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4209EE33196A95FD005BFA87 /* GnucashTests-Info.plist */,
+				4209EE34196A95FD005BFA87 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4209EE05196A95FD005BFA87 /* Gnucash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4209EE3B196A95FD005BFA87 /* Build configuration list for PBXNativeTarget "Gnucash" */;
+			buildPhases = (
+				4209EE02196A95FD005BFA87 /* Sources */,
+				4209EE03196A95FD005BFA87 /* Frameworks */,
+				4209EE04196A95FD005BFA87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gnucash;
+			productName = Gnucash;
+			productReference = 4209EE06196A95FD005BFA87 /* Gnucash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4209EE29196A95FD005BFA87 /* GnucashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4209EE3E196A95FD005BFA87 /* Build configuration list for PBXNativeTarget "GnucashTests" */;
+			buildPhases = (
+				4209EE26196A95FD005BFA87 /* Sources */,
+				4209EE27196A95FD005BFA87 /* Frameworks */,
+				4209EE28196A95FD005BFA87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4209EE30196A95FD005BFA87 /* PBXTargetDependency */,
+			);
+			name = GnucashTests;
+			productName = GnucashTests;
+			productReference = 4209EE2A196A95FD005BFA87 /* GnucashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4209EDFE196A95FD005BFA87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = CC;
+				TargetAttributes = {
+					4209EE29196A95FD005BFA87 = {
+						TestTargetID = 4209EE05196A95FD005BFA87;
+					};
+				};
+			};
+			buildConfigurationList = 4209EE01196A95FD005BFA87 /* Build configuration list for PBXProject "Gnucash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4209EDFD196A95FD005BFA87;
+			productRefGroup = 4209EE07196A95FD005BFA87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4209EE05196A95FD005BFA87 /* Gnucash */,
+				4209EE29196A95FD005BFA87 /* GnucashTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4209EE04196A95FD005BFA87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4209EE25196A95FD005BFA87 /* Images.xcassets in Resources */,
+				4209EE14196A95FD005BFA87 /* InfoPlist.strings in Resources */,
+				4209EE1D196A95FD005BFA87 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4209EE28196A95FD005BFA87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4209EE36196A95FD005BFA87 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4209EE02196A95FD005BFA87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4209EE23196A95FD005BFA87 /* SecondViewController.m in Sources */,
+				4209EE1A196A95FD005BFA87 /* AppDelegate.m in Sources */,
+				4209EE20196A95FD005BFA87 /* FirstViewController.m in Sources */,
+				4209EE16196A95FD005BFA87 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4209EE26196A95FD005BFA87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4209EE38196A95FD005BFA87 /* GnucashTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4209EE30196A95FD005BFA87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4209EE05196A95FD005BFA87 /* Gnucash */;
+			targetProxy = 4209EE2F196A95FD005BFA87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4209EE12196A95FD005BFA87 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4209EE13196A95FD005BFA87 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4209EE1B196A95FD005BFA87 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4209EE1C196A95FD005BFA87 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4209EE34196A95FD005BFA87 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4209EE35196A95FD005BFA87 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4209EE39196A95FD005BFA87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4209EE3A196A95FD005BFA87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4209EE3C196A95FD005BFA87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gnucash/Gnucash-Prefix.pch";
+				INFOPLIST_FILE = "Gnucash/Gnucash-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4209EE3D196A95FD005BFA87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gnucash/Gnucash-Prefix.pch";
+				INFOPLIST_FILE = "Gnucash/Gnucash-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4209EE3F196A95FD005BFA87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Gnucash.app/Gnucash";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gnucash/Gnucash-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GnucashTests/GnucashTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4209EE40196A95FD005BFA87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Gnucash.app/Gnucash";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gnucash/Gnucash-Prefix.pch";
+				INFOPLIST_FILE = "GnucashTests/GnucashTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4209EE01196A95FD005BFA87 /* Build configuration list for PBXProject "Gnucash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4209EE39196A95FD005BFA87 /* Debug */,
+				4209EE3A196A95FD005BFA87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4209EE3B196A95FD005BFA87 /* Build configuration list for PBXNativeTarget "Gnucash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4209EE3C196A95FD005BFA87 /* Debug */,
+				4209EE3D196A95FD005BFA87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4209EE3E196A95FD005BFA87 /* Build configuration list for PBXNativeTarget "GnucashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4209EE3F196A95FD005BFA87 /* Debug */,
+				4209EE40196A95FD005BFA87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4209EDFE196A95FD005BFA87 /* Project object */;
+}
