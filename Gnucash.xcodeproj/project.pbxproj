@@ -25,6 +25,9 @@
 		4209EF14196BF779005BFA87 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4209EF13196BF779005BFA87 /* libsqlite3.dylib */; };
 		4209EF18196C3295005BFA87 /* gnucash.db in Resources */ = {isa = PBXBuildFile; fileRef = 4209EF17196C3295005BFA87 /* gnucash.db */; };
 		4209EF1E196C47E1005BFA87 /* AccListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4209EF1D196C47E1005BFA87 /* AccListTableViewController.m */; };
+		42AFB7281971336000CE3B07 /* SubAccListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AFB7271971336000CE3B07 /* SubAccListTableViewController.m */; };
+		42AFB72D197133E700CE3B07 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AFB72C197133E700CE3B07 /* Account.m */; };
+		42AFB7671972887500CE3B07 /* Acclist.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AFB7661972887500CE3B07 /* Acclist.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,12 @@
 		4209EF17196C3295005BFA87 /* gnucash.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = gnucash.db; sourceTree = "<group>"; };
 		4209EF1C196C47E1005BFA87 /* AccListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccListTableViewController.h; sourceTree = "<group>"; };
 		4209EF1D196C47E1005BFA87 /* AccListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccListTableViewController.m; sourceTree = "<group>"; };
+		42AFB7261971336000CE3B07 /* SubAccListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubAccListTableViewController.h; sourceTree = "<group>"; };
+		42AFB7271971336000CE3B07 /* SubAccListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubAccListTableViewController.m; sourceTree = "<group>"; };
+		42AFB72B197133E700CE3B07 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Account.h; path = Model/Account.h; sourceTree = "<group>"; };
+		42AFB72C197133E700CE3B07 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Account.m; path = Model/Account.m; sourceTree = "<group>"; };
+		42AFB7651972887500CE3B07 /* Acclist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Acclist.h; path = Model/Acclist.h; sourceTree = "<group>"; };
+		42AFB7661972887500CE3B07 /* Acclist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Acclist.m; path = Model/Acclist.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,15 +133,11 @@
 		4209EE0F196A95FD005BFA87 /* Gnucash */ = {
 			isa = PBXGroup;
 			children = (
-				4209EF1C196C47E1005BFA87 /* AccListTableViewController.h */,
-				4209EF1D196C47E1005BFA87 /* AccListTableViewController.m */,
+				42AFB72A1971339600CE3B07 /* Model */,
+				42AFB7291971337000CE3B07 /* Controller */,
 				4209EE18196A95FD005BFA87 /* AppDelegate.h */,
 				4209EE19196A95FD005BFA87 /* AppDelegate.m */,
 				4209EE1B196A95FD005BFA87 /* Main.storyboard */,
-				4209EE1E196A95FD005BFA87 /* FirstViewController.h */,
-				4209EE1F196A95FD005BFA87 /* FirstViewController.m */,
-				4209EE21196A95FD005BFA87 /* SecondViewController.h */,
-				4209EE22196A95FD005BFA87 /* SecondViewController.m */,
 				4209EE24196A95FD005BFA87 /* Images.xcassets */,
 				4209EE10196A95FD005BFA87 /* Supporting Files */,
 			);
@@ -167,6 +172,32 @@
 				4209EE34196A95FD005BFA87 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42AFB7291971337000CE3B07 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4209EE1E196A95FD005BFA87 /* FirstViewController.h */,
+				4209EE1F196A95FD005BFA87 /* FirstViewController.m */,
+				4209EE21196A95FD005BFA87 /* SecondViewController.h */,
+				4209EE22196A95FD005BFA87 /* SecondViewController.m */,
+				4209EF1C196C47E1005BFA87 /* AccListTableViewController.h */,
+				4209EF1D196C47E1005BFA87 /* AccListTableViewController.m */,
+				42AFB7261971336000CE3B07 /* SubAccListTableViewController.h */,
+				42AFB7271971336000CE3B07 /* SubAccListTableViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		42AFB72A1971339600CE3B07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42AFB72B197133E700CE3B07 /* Account.h */,
+				42AFB72C197133E700CE3B07 /* Account.m */,
+				42AFB7651972887500CE3B07 /* Acclist.h */,
+				42AFB7661972887500CE3B07 /* Acclist.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,8 +300,11 @@
 			files = (
 				4209EE23196A95FD005BFA87 /* SecondViewController.m in Sources */,
 				4209EE1A196A95FD005BFA87 /* AppDelegate.m in Sources */,
+				42AFB7671972887500CE3B07 /* Acclist.m in Sources */,
 				4209EF1E196C47E1005BFA87 /* AccListTableViewController.m in Sources */,
 				4209EE20196A95FD005BFA87 /* FirstViewController.m in Sources */,
+				42AFB72D197133E700CE3B07 /* Account.m in Sources */,
+				42AFB7281971336000CE3B07 /* SubAccListTableViewController.m in Sources */,
 				4209EE16196A95FD005BFA87 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +510,7 @@
 				4209EE3D196A95FD005BFA87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4209EE3E196A95FD005BFA87 /* Build configuration list for PBXNativeTarget "GnucashTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +519,7 @@
 				4209EE40196A95FD005BFA87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
