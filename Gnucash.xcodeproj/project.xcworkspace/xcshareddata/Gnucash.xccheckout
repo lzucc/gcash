@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>14DFB1EF-D9D7-414F-BA27-1B65511DC12B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Gnucash</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>27E3518B-9EBE-48AA-95DC-985FBAAF5189</key>
+		<string>ssh://lares.ipchina.org/opt/repo.git/xcode/gnucash.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Gnucash.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>27E3518B-9EBE-48AA-95DC-985FBAAF5189</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://lares.ipchina.org/opt/repo.git/xcode/gnucash.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>27E3518B-9EBE-48AA-95DC-985FBAAF5189</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>27E3518B-9EBE-48AA-95DC-985FBAAF5189</string>
+			<key>IDESourceControlWCCName</key>
+			<string>gnucash</string>
+		</dict>
+	</array>
+</dict>
+</plist>

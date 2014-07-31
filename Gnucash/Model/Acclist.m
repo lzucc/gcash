@@ -29,13 +29,6 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        //        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        //        NSArray *storedAccList = [defaults objectForKey:@"accList"];
-        //        if (storedAccList) {
-        //            self.accList = [storedAccList mutableCopy];
-        //        } else {
-        //            self.accList = [NSMutableArray array];
-        //        }
         self.accList = [NSMutableArray array];
         sqlite3 *database;
         if (sqlite3_open([[self dataFilePath] UTF8String], &database)!= SQLITE_OK) {

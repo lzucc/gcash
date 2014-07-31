@@ -110,23 +110,44 @@
         <scene sceneID="ATM-2u-Sd5">
             <objects>
                 <tableViewController id="j3r-Vb-cUE" customClass="SubAccListTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="zhw-6K-5Xq">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="zhw-6K-5Xq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="accCell" id="PIj-fu-MiI">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="accCellID" id="0gC-QI-ftB" customClass="AccTableViewCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PIj-fu-MiI" id="Evt-6e-k4I">
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0gC-QI-ftB" id="RdW-wr-Syq">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsV-c4-PDI">
+                                            <rect key="frame" x="20" y="11" width="213" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHI-7J-CqC">
+                                            <rect key="frame" x="254" y="7" width="46" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Button">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="checkDetails:" destination="0gC-QI-ftB" eventType="touchUpInside" id="MOW-2S-PkN"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="j3r-Vb-cUE" kind="push" id="RU3-Hr-0xk"/>
+                                    <outlet property="accNameLabel" destination="VsV-c4-PDI" id="Rvy-Bu-pdS"/>
+                                    <segue destination="j3r-Vb-cUE" kind="push" id="2pr-86-veO"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="j3r-Vb-cUE" id="3pn-Js-Sb2"/>
                             <outlet property="delegate" destination="j3r-Vb-cUE" id="Mlt-6q-yjA"/>
@@ -136,12 +157,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PPE-MV-dRe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="576" y="213"/>
+            <point key="canvasLocation" x="696" y="199"/>
         </scene>
-        <!--Account List View Controller - Account-->
+        <!--Navigation Controller - Account-->
         <scene sceneID="TpO-u2-hWB">
             <objects>
-                <navigationController title="Account" definesPresentationContext="YES" id="bRf-aQ-QZq" customClass="AccountListViewController" sceneMemberID="viewController">
+                <navigationController title="Account" definesPresentationContext="YES" id="bRf-aQ-QZq" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Account" image="second" id="lSp-h9-IXg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3iT-OO-XpV">
                         <autoresizingMask key="autoresizingMask"/>

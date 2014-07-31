@@ -15,7 +15,9 @@
 @property NSString *parentGuid;
 @property NSString *commondity_guid;
 @property NSString *description;
+
 @property NSInteger placeHolder;
 @property NSInteger hidden;
+@property NSInteger subAccNum;
 
 @end

@@ -28,6 +28,8 @@
 		42AFB7281971336000CE3B07 /* SubAccListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AFB7271971336000CE3B07 /* SubAccListTableViewController.m */; };
 		42AFB72D197133E700CE3B07 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AFB72C197133E700CE3B07 /* Account.m */; };
 		42AFB7671972887500CE3B07 /* Acclist.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AFB7661972887500CE3B07 /* Acclist.m */; };
+		42AFB7F5198935B800CE3B07 /* AccountDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AFB7F4198935B800CE3B07 /* AccountDAO.m */; };
+		42AFB7F81989490700CE3B07 /* AccTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AFB7F71989490700CE3B07 /* AccTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,10 @@
 		42AFB72C197133E700CE3B07 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Account.m; path = Model/Account.m; sourceTree = "<group>"; };
 		42AFB7651972887500CE3B07 /* Acclist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Acclist.h; path = Model/Acclist.h; sourceTree = "<group>"; };
 		42AFB7661972887500CE3B07 /* Acclist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Acclist.m; path = Model/Acclist.m; sourceTree = "<group>"; };
+		42AFB7F3198935B800CE3B07 /* AccountDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountDAO.h; path = Model/AccountDAO.h; sourceTree = "<group>"; };
+		42AFB7F4198935B800CE3B07 /* AccountDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountDAO.m; path = Model/AccountDAO.m; sourceTree = "<group>"; };
+		42AFB7F61989490700CE3B07 /* AccTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccTableViewCell.h; path = View/AccTableViewCell.h; sourceTree = "<group>"; };
+		42AFB7F71989490700CE3B07 /* AccTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccTableViewCell.m; path = View/AccTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,7 @@
 		4209EE0F196A95FD005BFA87 /* Gnucash */ = {
 			isa = PBXGroup;
 			children = (
+				42AFB7A9198464EB00CE3B07 /* View */,
 				42AFB72A1971339600CE3B07 /* Model */,
 				42AFB7291971337000CE3B07 /* Controller */,
 				4209EE18196A95FD005BFA87 /* AppDelegate.h */,
@@ -196,8 +203,19 @@
 				42AFB72C197133E700CE3B07 /* Account.m */,
 				42AFB7651972887500CE3B07 /* Acclist.h */,
 				42AFB7661972887500CE3B07 /* Acclist.m */,
+				42AFB7F3198935B800CE3B07 /* AccountDAO.h */,
+				42AFB7F4198935B800CE3B07 /* AccountDAO.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		42AFB7A9198464EB00CE3B07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42AFB7F61989490700CE3B07 /* AccTableViewCell.h */,
+				42AFB7F71989490700CE3B07 /* AccTableViewCell.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +318,8 @@
 			files = (
 				4209EE23196A95FD005BFA87 /* SecondViewController.m in Sources */,
 				4209EE1A196A95FD005BFA87 /* AppDelegate.m in Sources */,
+				42AFB7F5198935B800CE3B07 /* AccountDAO.m in Sources */,
+				42AFB7F81989490700CE3B07 /* AccTableViewCell.m in Sources */,
 				42AFB7671972887500CE3B07 /* Acclist.m in Sources */,
 				4209EF1E196C47E1005BFA87 /* AccListTableViewController.m in Sources */,
 				4209EE20196A95FD005BFA87 /* FirstViewController.m in Sources */,

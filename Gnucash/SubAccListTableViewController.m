@@ -7,12 +7,15 @@
 //
 
 #import "SubAccListTableViewController.h"
-#import "Acclist.h"
+#import "AccountDAO.h"
 #import "Account.h"
+#import "AccTableViewCell.h"
 
 @interface SubAccListTableViewController ()
-@property (strong, nonatomic) Acclist  *accList;
+@property (strong, nonatomic) AccountDAO  *accDAO;
 @end
+
+static NSString *CellTableIdentifier = @"accCellID";
 
 @implementation SubAccListTableViewController
 
@@ -28,7 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.accList = [Acclist sharedAccList];
+    self.accDAO = [AccountDAO sharedAccDAO];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -56,8 +59,8 @@
     //#warning Incomplete method implementation.
     // Return the number of rows in the section.
     NSInteger cnt = 0;
-    if (_parentGuid!=NULL && self.accList!=NULL) {
-        cnt=[[self.accList getAccNameListByParentGuid:_parentGuid] count];
+    if (_parentGuid!=NULL && self.accDAO!=NULL) {
+        cnt=[[self.accDAO getAccListByParentGuid:_parentGuid] count];
     }
     return cnt;
 }
@@ -65,12 +68,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"accCell" forIndexPath:indexPath];
+    AccTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellTableIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    NSString *accNameStr = ((Account *)[self.accList getAccNameListByParentGuid:_parentGuid][indexPath.row]).name;
-    cell.textLabel.text = accNameStr;
-    
+    NSString *accNameStr = ((Account *)[self.accDAO getAccListByParentGuid:_parentGuid][indexPath.row]).name;
+    //    cell.textLabel.text = accNameStr;
+    cell.accNameLabel.text=accNameStr;
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
 
@@ -123,7 +127,7 @@
  // Pass the selected object to the new view controller.
      NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
      SubAccListTableViewController *listSubAcc = segue.destinationViewController;
-     Account *acc = [self.accList getAccNameListByParentGuid:_parentGuid][indexPath.row];
+     Account *acc = [self.accDAO getAccListByParentGuid:_parentGuid][indexPath.row];
      listSubAcc.parentGuid = acc.guid;
      listSubAcc.navigationItem.title = acc.name;
  }
