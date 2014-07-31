@@ -71,14 +71,24 @@ static NSString *CellTableIdentifier = @"accCellID";
     AccTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellTableIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    NSString *accNameStr = ((Account *)[self.accDAO getAccListByParentGuid:_parentGuid][indexPath.row]).name;
+    Account *cellAcc = (Account *)[self.accDAO getAccListByParentGuid:_parentGuid][indexPath.row];
+    NSString *accNameStr = cellAcc.name;
     //    cell.textLabel.text = accNameStr;
     cell.accNameLabel.text=accNameStr;
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    if (cellAcc.subAccNum<=0) {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+        cell.selectionStyle = UITableViewCellSelectionStyleBlue;
+       // cell.
+    }
     return cell;
 }
 
-
+//-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+//    Account *cellAcc = (Account *)[self.accDAO getAccListByParentGuid:_parentGuid][indexPath.row];
+//    if (cellAcc.subAccNum<=0) {
+//        return;
+//    }
+//}
 /*
  // Override to support conditional editing of the table view.
  - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath

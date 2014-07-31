@@ -47,12 +47,7 @@
         sqlite3_close(database);
         NSAssert(0, @"Failed to open database");
     }
-//    NSString *query = @"select t.guid,t.name,t.account_type,t.parent_guid,t.hidden,t.placeholder, t.description  from accounts t ";
-//    
-//    if ([sqlWhereStr length]>3) {
-//        query=[query stringByAppendingString:sqlWhereStr];
-//    }
-    
+
     sqlite3_stmt *statement;
     NSMutableArray *accListIn = [[NSMutableArray alloc] init];
     if (sqlite3_prepare_v2(database, [sqlStr UTF8String], -1, &statement, nil) == SQLITE_OK) {
@@ -82,11 +77,11 @@
             if(desc!=NULL){
                 acc.description = [[NSString alloc] initWithUTF8String:desc];
             }
-            NSString *whereStr =@"";
+            NSMutableString *whereStr = [NSMutableString stringWithString:@""];
             if(parentGuid!=NULL){
-                NSString *whereStr = [@"where parent_guid='" stringByAppendingString:acc.parentGuid];
-                whereStr = [whereStr stringByAppendingString:@"'"];
-               
+                [whereStr appendString:@"where parent_guid='"];
+                [whereStr appendString:acc.guid];
+                [whereStr appendString:@"'"];
             }
              acc.subAccNum = [self getAccCountBySQL:whereStr];
             [accListIn addObject:acc];
@@ -103,17 +98,17 @@
         sqlite3_close(database);
         NSAssert(0, @"Failed to open database");
     }
-    NSString *query = @"select count(*) from accounts ";
+    NSMutableString *query = [NSMutableString stringWithString: @"select count(*) from accounts "];
     
     if ([sqlWhereStr length]>1) {
-        query=[query stringByAppendingString:sqlWhereStr];
+        [query appendString:sqlWhereStr];
     }
     
     sqlite3_stmt *statement;
-    NSInteger count = 0;
+    int count = 0;
     if (sqlite3_prepare_v2(database, [query UTF8String], -1, &statement, nil) == SQLITE_OK) {
         while (sqlite3_step(statement) == SQLITE_ROW) {
-            count=(NSInteger)sqlite3_column_text(statement, 0);
+            count = sqlite3_column_int(statement, 0);
         }
         sqlite3_finalize(statement);
     }
